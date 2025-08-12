@@ -30,9 +30,10 @@ public class ParametrizedLionTest {
         });
     }
     @Test
-    public void doesHaveManeReturnsCorrectValue() throws Exception {
+    public void testDoesHaveManeReturnsCorrectValue() throws Exception {
         Lion lion = new Lion(sex, feline);
         Assert.assertEquals(hasMane, lion.doesHaveMane());
     }
 
 }
+

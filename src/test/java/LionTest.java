@@ -20,9 +20,9 @@ public class LionTest {
     @Test
     public void getKittensTest() throws Exception {
         Lion lion = new Lion("Самка", feline);
-        Mockito.when(feline.getKittens()).thenReturn(3);
+        Mockito.when(feline.getKittens()).thenReturn(1);
         int actualKittensCount = lion.getKittens();
-        int expectedKittensCount = 3;
+        int expectedKittensCount = 1;
         assertEquals("Не правильное число львят", expectedKittensCount, actualKittensCount);
     }
 
@@ -44,7 +44,7 @@ public class LionTest {
     }
 
     @Test
-    public void doesHaveManeThrowsExceptionTest() {
+    public void testDoesHaveManeThrowsExceptionTest() {
         try {
             Lion lion = new Lion("Котик", feline);
         } catch (Exception exception) {
@@ -53,3 +53,4 @@ public class LionTest {
         }
     }
 }
+
